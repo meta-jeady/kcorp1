@@ -1,38 +1,29 @@
 {
-  "log": {
-    "loglevel": "warning"
-  },
-
+  "log": { "loglevel": "warning" },
   "inbounds": [
     {
+      "port": 10000,
       "listen": "0.0.0.0",
-      "port": "env:PORT",
       "protocol": "vless",
-
       "settings": {
         "clients": [
           {
-            "id": "@kcorp-tech"
+            "id": "d3b9a8e1-7c2f-4a5e-9f1b-2c8d6e4a0f35",
+            "level": 0
           }
         ],
         "decryption": "none"
       },
-
       "streamSettings": {
         "network": "ws",
-        "security": "none",
-
         "wsSettings": {
-          "path": "/@kcorp237",
-          "heartbeatPeriod": 20
+          "path": "/@kcorp237"
         }
       }
     }
   ],
-
   "outbounds": [
-    {
-      "protocol": "freedom"
-    }
+    { "protocol": "freedom", "tag": "direct" },
+    { "protocol": "blackhole", "tag": "blocked" }
   ]
 }
