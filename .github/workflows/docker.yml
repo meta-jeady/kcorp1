@@ -1,4 +1,4 @@
-name: Build and Push ABESS-OPS
+name: Build and Push kcorp1
 
 on:
   push:
@@ -26,6 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: metajeady/kcorp1:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          tags: metajeady/kcorp1
