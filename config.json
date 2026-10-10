@@ -2,37 +2,34 @@
   "log": {
     "loglevel": "warning"
   },
-
   "inbounds": [
     {
       "listen": "0.0.0.0",
       "port": "env:PORT",
       "protocol": "vless",
-
       "settings": {
         "clients": [
           {
-            "id": "@kcorp-tech"
+            "id": "d8a6b1c2-3f4e-4a5b-8c9d-1e2f3a4b5c6d",
+            "level": 0
           }
         ],
         "decryption": "none"
       },
-
       "streamSettings": {
         "network": "ws",
         "security": "none",
-
         "wsSettings": {
-          "path": "/@kcorp237",
-          "heartbeatPeriod": 20
+          "path": "/@kcorp237"
         }
       }
     }
   ],
-
   "outbounds": [
     {
       "protocol": "freedom"
     }
   ]
 }
+
+Ça que tu à envoyer
